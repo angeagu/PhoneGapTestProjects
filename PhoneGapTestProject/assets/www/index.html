@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>PhoneGapTestProject</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	
+	<link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+	<script type="text/javascript" charset="utf-8" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="PhoneGapTest.js"></script>
+
+</head> 
+
+<body> 
+<div data-role="page" id="pagina1">
+	<div data-role="header">
+		<h2>PhoneGapTestProject</h2>
+		
+	</div>
+	<div data-role="content">
+		<div class="content-primary">
+
+		<form action="#" method="get">
+		
+		<ul data-role="controlgroup" data-type="horizontal" class="localnav">
+			<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active">Mes</a></li>
+			<li><a href="#anno" data-role="button" data-transition="fade">Año</a></li>
+			<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" onclick="cargarListaCompleta();">Buscar...</a></li>
+		</ul>
+		
+		</form>
+		
+		</div>
+		
+	<br><br>
+	
+	<div id="listaregistros" class=ui-grid-b>
+
+    </div>
+    
+	<a href="#popup" data-role="button" data-icon="plus">Nuevo Registro</a> 
+	
+	</div>
+	
+</div>
+
+<div data-role="page" id="popup">
+	<div data-role="header">
+		<h1>Nuevo Registro</h1>
+	</div>
+	<div data-role="content" id="formularioRegistro">
+		<form>
+			<label for="concepto">Concepto</label>
+			<input type="text" name="concepto" id="concepto" maxlength="30" />
+			<label for="fecha">Fecha</label>
+			<input type="text" name="fecha" id="fecha" maxlength="30" />
+			<label for="importe">Cantidad</label>
+			<input type="text" name="importe" id="importe" maxlength="30" />
+		</form>
+		<fieldset class="ui-grid-a">
+			<a href="index.html" onClick="guardarRegistro();" data-role="button">Guardar</a>
+			<a href="#pagina1" data-role="button">Volver</a>	   
+		</fieldset>
+	</div>
+	<div data-role="footer">
+		<h4>PhoneGapTestProject</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="buscadorFacturas">
+	<div data-role="header">
+		<h1>Buscador de facturas</h1>
+	</div>
+	<h3>Lista completa de facturas</h3>
+		
+	<div id="listacompletaregistros">
+	</div>
+	<br>
+	<br>
+	<div data-role="footer">
+		<h4>PhoneGapTestProject</h4>
+	</div>
+</div>
+
+</body>
+</html>

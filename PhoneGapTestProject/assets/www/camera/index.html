@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>PhoneGapTestCameraProject</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 
+	<script type="text/javascript" charset="utf-8" src="../cordova-2.0.0.js"></script>
+	
+	<link rel="stylesheet" href="../jquery.mobile-1.1.1.min.css" />
+	<script type="text/javascript" charset="utf-8" src="../jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./PhoneGapTestCamera.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		
+	</script>
+
+</head> 
+
+<body>
+ 
+<div id="divCamara">
+	<br>
+	<div style="margin:20px">
+		<img style="width:100px;height:100px;" id="imagen" src="" />
+	</div>
+	<br>
+	<div data-role="rangeslider">
+		<label for="slider">Tiempo de Espera:</label>
+		<input type="range" name="slider" id="slider" min="0" max="20" value="0" data-mini="true" />
+	</div>
+	<br>
+	<button onClick="realizarFoto();" >Foto!</button>
+
+</div>
+	
+</body>
+</html>
