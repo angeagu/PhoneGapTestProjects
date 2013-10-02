@@ -3,4 +3,5 @@
 		<plugin name="Storage" value="org.apache.cordova.Storage" />
 		<plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager"/>
 		<plugin name="Camera" value="org.apache.cordova.CameraLauncher"/>
+		<plugin name="Media" value="org.apache.cordova.AudioHandler" />
 	</plugins> 

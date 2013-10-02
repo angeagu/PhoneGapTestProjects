@@ -62,10 +62,14 @@ function crearTabla(results) {
 
 
 function guardarRegistro() {
-	
+	alert('entrando en guardar registro');
 	$('#formularioRegistro');
 	var concepto = $('#concepto').val();
-	var fecha = $('#fecha').val();
+	var dia=$('#select-dia').val();
+	var mes=$('#select-mes').val();
+	var ano=$('#select-ano').val();
+	var fecha = dia + '-' + mes + '-' + ano;
+	alert(fecha);
 	var importe = $('#importe').val();
 	
 	var db = window.openDatabase("FACTURAS", "1.0", "Facturas", 1000000);
@@ -95,8 +99,16 @@ function exitoBBDD(error) {
 	db.transaction(selectFacturas,errorBBDD);
 }
 
+function cargarFacturasMes() {
+	alert('cargarFacturasMes');
+}
+
+function cargarFacturasAno() {
+	alert('cargarFacturasAno');
+}
 
 function cargarListaCompleta() {
+	alert('Entrando en cargarListaCompleta');
 	console.log('Entrando en cargarListaCompleta');
 	var db = window.openDatabase("FACTURAS", "1.0", "Facturas", 1000000);
 	db.transaction(function(transaction){
