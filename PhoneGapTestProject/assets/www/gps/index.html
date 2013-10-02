@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>PhoneGapTestCameraProject</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 
+	<script type="text/javascript" charset="utf-8" src="../cordova-2.0.0.js"></script>
+	
+	<link rel="stylesheet" href="./jquery.mobile-1.3.0.css" />
+	<script type="text/javascript" charset="utf-8" src="./jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./jquery.mobile-1.3.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./PhoneGapTestGps.js"></script>
+		
+	</script>
+
+</head> 
+
+<body>
+ 
+<div id="divGps">
+	<br>
+	<div id="formGPS">
+		<label for="latitud">Latitud:</label>
+		<input type="text" name="latitud" id="latitud" data-mini="true" />
+		<label for="longitud">Longitud:</label>
+		<input type="text" name="longitud" id="longitud" data-mini="true" />
+		<label for="altitud">Altitud:</label>
+		<input type="text" name="altitud" id="altitud" data-mini="true" />
+		<label for="precision">Precision:</label>
+		<input type="text" name="precision" id="precision" data-mini="true" />
+		<label for="precision_altitud">Precision Altitud:</label>
+		<input type="text" name="precision_altitud" id="precision_altitud" data-mini="true" />
+		<label for="direccion">Direccion:</label>
+		<input type="text" name="direccion" id="direccion" data-mini="true" />
+		<label for="Velocidad">Velocidad:</label>
+		<input type="text" name="velocidad" id="velocidad" data-mini="true" />
+		<label for="fecha">Fecha:</label>
+		<input type="text" name="fecha" id="fecha" data-mini="true" />
+	</div>
+	
+	<br>
+	<!-- 
+	<button onClick="setTimeout(capturarCoordenadas(),600);" >Capturar Coordenadas</button>
+	-->
+	<button onClick="capturarCoordenadas();" >Capturar Coordenadas</button>
+	<button onClick="stop();" >Stop</button>
+
+</div>
+	
+</body>
+</html>
