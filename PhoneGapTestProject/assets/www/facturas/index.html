@@ -25,11 +25,11 @@
 			<h1>PhoneGap Facturas</h1>
 			<a href="index.html" data-icon="gear" class="ui-btn-right">Opciones</a>
 			<div data-role="navbar">
-			<ul>
-				<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active" onclick="cargarListaCompleta();">Todas</a></li>
-				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasMes();">Mes</a></li>
-				<li><a href="#anno" data-role="button" data-transition="fade" onclick="cargarFacturasAno();">Año</a></li>
-				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" onclick="cargarListaCompleta();" >Buscar</a></li>
+			<ul>				
+				<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active" onclick="cargarFacturasMes(0);">Mes</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasAno(0);">Año</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade"  onclick="cargarListaCompleta();">Todas</a></li>
+				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" onclick="buscarFacturas();">Buscar</a></li>
 			</ul>
 			</div>
 		</div>
@@ -39,9 +39,11 @@
 		
 	<br><br>
 	
-	<div id="listaregistros" class=ui-grid-b>
+	<div id="listaregistros" class="ui-grid-b">
 
     </div>
+    
+    <br>
     
 	<a href="#popup" data-role="button" data-icon="plus">Nuevo Registro</a> 
 	
@@ -98,18 +100,18 @@
             <label for="select-mes">Mes</label>
             <select name="select-mes" id="select-mes">
                 <option>Mes</option>
-                <option value="ene">Enero</option>
-                <option value="feb">Febrero</option>
-                <option value="mar">Marzo</option>
-                <option value="abr">Abril</option>
-                <option value="may">Mayo</option>
-                <option value="jun">Junio</option>
-                <option value="jul">Julio</option>
-                <option value="ago">Agosto</option>
-                <option value="sep">Septiembre</option>
-                <option value="oct">Octubre</option>
-                <option value="nov">Noviembre</option>
-                <option value="dic">Diciembre</option>
+                <option value="01">Enero</option>
+                <option value="02">Febrero</option>
+                <option value="03">Marzo</option>
+                <option value="04">Abril</option>
+                <option value="05">Mayo</option>
+                <option value="06">Junio</option>
+                <option value="07">Julio</option>
+                <option value="08">Agosto</option>
+                <option value="09">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
             </select>
             <label for="select-ano">Year</label>
             	<select name="select-ano" id="select-ano">
@@ -140,18 +142,21 @@
 			<h1>PhoneGap Facturas</h1>
 			<a href="index.html" data-icon="gear" class="ui-btn-right">Opciones</a>
 			<div data-role="navbar">
-			<ul>
-				<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active" onclick="cargarListaCompleta();">Todas</a></li>
-				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasMes();">Mes</a></li>
-				<li><a href="#anno" data-role="button" data-transition="fade" onclick="cargarFacturasAno();">Año</a></li>
-				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" onclick="cargarListaCompleta();" >Buscar</a></li>
+			<ul>				
+				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasMes(0);">Mes</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasAno(0);">Año</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade"  onclick="cargarListaCompleta();">Todas</a></li>
+				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" class="ui-btn-active" onclick="buscarFacturas();">Buscar</a></li>
 			</ul>
 			</div>
-		</div>
-	<h3>Lista completa de facturas</h3>
-		
-	<div id="listacompletaregistros">
 	</div>
+		
+	<div data-role="content">
+		<div class="content-primary">
+			<ul data-role="listview" data-filter="true" data-inset="true" id="listabusquedafacturas" data-theme="d">
+		</div>
+	</div>
+		
 	<br>
 	<br>
 	<div data-role="footer">
