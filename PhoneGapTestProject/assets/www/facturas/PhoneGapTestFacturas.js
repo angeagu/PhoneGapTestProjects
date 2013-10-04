@@ -1,3 +1,6 @@
+var mesActual;
+var anoActual;
+var pestanaActual='Mes';
 
 document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("backbutton", onBackKeyDown, false);
@@ -134,24 +137,32 @@ function insertaFactura (transaction,concepto,importe,fecha) {
 	transaction.executeSql(sql);
 	console.log('fin inserta factura');
 	
-	transaction.executeSql("SELECT * FROM FACTURAS", [], returnRows, errorBBDD);
+	//transaction.executeSql("SELECT * FROM FACTURAS", [], returnRows, errorBBDD);
+	var array = fecha.split("-");
+	var month = array[1];
+	var year = array[2];
+	alert ('Month: ' + month + ' Year: ' + year);
+	queryFacturasMes(transaction,month,year);
 }
 
 
 
 function cargarFacturasMes(mes) {
 	//alert ('Entrando en cargarFacturasMes');
-	var fecha;
+
+	fecha = new Date();
 	var month=mes;
 	var year;
+	
 	if (month==0) {
-		fecha = new Date();
 		month = fecha.getMonth()+1;
-		if (month<10) {
-			month = "0" + month;
-		}
-		year=fecha.getFullYear();
 	}
+	
+	if (month<10) {
+			month = "0" + month;
+	}
+	mesActual = month;
+	year=fecha.getFullYear();
 	
 	var db = window.openDatabase("FACTURAS", "1.0", "Facturas", 1000000);
 	db.transaction(function(transaction) {
@@ -169,12 +180,14 @@ function queryFacturasMes(transaction,month,year) {
 
 function cargarFacturasAno(anno) {
 	//alert ('Entrando en cargarFacturasAno');
+	
 	var fecha;
 	var year=anno;
 	if (year==0) {
 		fecha = new Date();
 		year = fecha.getFullYear();
 	}
+	anoActual = year;
 	
 	var db = window.openDatabase("FACTURAS", "1.0", "Facturas", 1000000);
 	db.transaction(function(transaction) {
@@ -219,6 +232,7 @@ function cargarListaCompleta() {
 	alert('Entrando en cargarListaCompleta');
 	console.log('Entrando en cargarListaCompleta');
 	
+	
 	var db = window.openDatabase("FACTURAS", "1.0", "Facturas", 1000000);
 	db.transaction(function(transaction){
 		transaction.executeSql('SELECT * FROM FACTURAS', [], crearTablaListaCompleta, errorBBDD);
@@ -241,10 +255,30 @@ function crearTablaListaCompleta(transaction,results) {
 	
 }
 
+function anterior() {
+	alert ('Pestaña Actual: ' + pestanaActual);
+	if (pestanaActual == 'Mes') {
+		cargarFacturasMes(mesActual-1);
+	}	
+	if (pestanaActual == 'Ano') {
+		cargarFacturasAno(anoActual-1);
+	}
+}
+
+function siguiente() {
+	alert ('Pestaña Actual: ' + pestanaActual);
+	if (pestanaActual == 'Mes') {
+		cargarFacturasMes(mesActual+1);
+	}	
+	if (pestanaActual == 'Ano') {
+		cargarFacturasAno(anoActual+1);
+	}
+}
+
 function onBackKeyDown()  {
 	navigator.notification.confirm(
        ("Desea salir de la aplicacion?"),
-        saliraplicacion,
+        saliraplicacion(1),
         'PhoneGap Facturas',
         'YES,NO');
  	

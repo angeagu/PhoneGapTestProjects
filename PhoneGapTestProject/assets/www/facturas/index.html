@@ -23,13 +23,13 @@
 			
 		<div data-role="header" data-id="navbar1" data-position="fixed">
 			<h1>PhoneGap Facturas</h1>
-			<a href="index.html" data-icon="gear" class="ui-btn-right">Opciones</a>
+			<a href="index.html" data-icon="gear" class="ui-btn-right" onclick="saliraplicacion(1);">Salir</a>
 			<div data-role="navbar">
 			<ul>				
-				<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active" onclick="cargarFacturasMes(0);">Mes</a></li>
-				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasAno(0);">Año</a></li>
-				<li><a href="#pagina1" data-role="button" data-transition="fade"  onclick="cargarListaCompleta();">Todas</a></li>
-				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" onclick="buscarFacturas();">Buscar</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active" onclick="pestanaActual='Mes'; cargarFacturasMes(0);">Mes</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="pestanaActual='Ano'; cargarFacturasAno(0);">Año</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade"  onclick="pestanaActual='Todas'; cargarListaCompleta();">Todas</a></li>
+				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" onclick="pestanaActual='Buscar'; buscarFacturas();">Buscar</a></li>
 			</ul>
 			</div>
 		</div>
@@ -45,6 +45,13 @@
     
     <br>
     
+    <div data-role="controlgroup" data-type="horizontal">
+			<a href="#" data-role="button" onClick="anterior();" data-icon="arrow-l">Anterior</a>
+			<a href="#" data-role="button" onClick="siguiente();" data-icon="arrow-r">Siguiente</a>
+	</div>
+	
+    <br>
+	
 	<a href="#popup" data-role="button" data-icon="plus">Nuevo Registro</a> 
 	
 	</div>
@@ -143,10 +150,10 @@
 			<a href="index.html" data-icon="gear" class="ui-btn-right">Opciones</a>
 			<div data-role="navbar">
 			<ul>				
-				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasMes(0);">Mes</a></li>
-				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="cargarFacturasAno(0);">Año</a></li>
-				<li><a href="#pagina1" data-role="button" data-transition="fade"  onclick="cargarListaCompleta();">Todas</a></li>
-				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" class="ui-btn-active" onclick="buscarFacturas();">Buscar</a></li>
+				<li><a href="#pagina1" id="tabMes" data-role="button" data-transition="fade"  onclick="cargarFacturasMes(0);">Mes</a></li>
+				<li><a href="#pagina1" id="tabAno" data-role="button" data-transition="fade"  onclick="cargarFacturasAno(0);">Año</a></li>
+				<li><a href="#pagina1" id="tabTodas" data-role="button" data-transition="fade"   onclick="cargarListaCompleta();">Todas</a></li>
+				<li><a href="#buscadorFacturas" id="tabBuscar" data-role="button" data-transition="fade"  onclick="buscarFacturas();">Buscar</a></li>
 			</ul>
 			</div>
 	</div>
