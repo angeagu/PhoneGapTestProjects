@@ -26,8 +26,8 @@
 			<a href="index.html" data-icon="gear" class="ui-btn-right" onclick="saliraplicacion(1);">Salir</a>
 			<div data-role="navbar">
 			<ul>				
-				<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active" onclick="pestanaActual='Mes'; cargarFacturasMes(0);">Mes</a></li>
-				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="pestanaActual='Ano'; cargarFacturasAno(0);">Año</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade" class="ui-btn-active" onclick="pestanaActual='Mes'; cargarFacturasMes(-1);">Mes</a></li>
+				<li><a href="#pagina1" data-role="button" data-transition="fade" onclick="pestanaActual='Ano'; cargarFacturasAno(-1);">Año</a></li>
 				<li><a href="#pagina1" data-role="button" data-transition="fade"  onclick="pestanaActual='Todas'; cargarListaCompleta();">Todas</a></li>
 				<li><a href="#buscadorFacturas" data-role="button" data-transition="fade" onclick="pestanaActual='Buscar'; buscarFacturas();">Buscar</a></li>
 			</ul>
@@ -37,7 +37,11 @@
 		
 		</div>
 		
-	<br><br>
+	<br>
+	<div id="div_mes_ano_actual" class="ui-grid-b">
+	</div>
+	
+	<br>
 	
 	<div id="listaregistros" class="ui-grid-b">
 
@@ -52,7 +56,7 @@
 	
     <br>
 	
-	<a href="#popup" data-role="button" data-icon="plus">Nuevo Registro</a> 
+	<a href="#popup" onClick="borrarCampos();" data-role="button" data-icon="plus">Nuevo Registro</a> 
 	
 	</div>
 	
@@ -107,15 +111,15 @@
             <label for="select-mes">Mes</label>
             <select name="select-mes" id="select-mes">
                 <option>Mes</option>
-                <option value="01">Enero</option>
-                <option value="02">Febrero</option>
-                <option value="03">Marzo</option>
-                <option value="04">Abril</option>
-                <option value="05">Mayo</option>
-                <option value="06">Junio</option>
-                <option value="07">Julio</option>
-                <option value="08">Agosto</option>
-                <option value="09">Septiembre</option>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
                 <option value="10">Octubre</option>
                 <option value="11">Noviembre</option>
                 <option value="12">Diciembre</option>
@@ -147,11 +151,11 @@
 <div data-role="page" id="buscadorFacturas">
 	<div data-role="header" data-id="navbar1" data-position="fixed">
 			<h1>PhoneGap Facturas</h1>
-			<a href="index.html" data-icon="gear" class="ui-btn-right">Opciones</a>
+			<a href="index.html" data-icon="gear" class="ui-btn-right" onclick="saliraplicacion(1);">Salir</a>
 			<div data-role="navbar">
 			<ul>				
-				<li><a href="#pagina1" id="tabMes" data-role="button" data-transition="fade"  onclick="cargarFacturasMes(0);">Mes</a></li>
-				<li><a href="#pagina1" id="tabAno" data-role="button" data-transition="fade"  onclick="cargarFacturasAno(0);">Año</a></li>
+				<li><a href="#pagina1" id="tabMes" data-role="button" data-transition="fade"  onclick="cargarFacturasMes(-1);">Mes</a></li>
+				<li><a href="#pagina1" id="tabAno" data-role="button" data-transition="fade"  onclick="cargarFacturasAno(-1);">Año</a></li>
 				<li><a href="#pagina1" id="tabTodas" data-role="button" data-transition="fade"   onclick="cargarListaCompleta();">Todas</a></li>
 				<li><a href="#buscadorFacturas" id="tabBuscar" data-role="button" data-transition="fade"  onclick="buscarFacturas();">Buscar</a></li>
 			</ul>
