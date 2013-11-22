@@ -12,7 +12,7 @@ function onDeviceReady() {
 
 function realizarFoto() {
 	var tiempoEspera = document.getElementById('slider').value;
-	alert("tiempo de espera: " + tiempoEspera);
+	alert("tiempo de espera: " + tiempoEspera + " segundos");
 	navigator.notification.alert('Entrando en realizarFoto',null,'realizarFoto','OK');
 	navigator.camera.getPicture(guardarFoto, errorFoto, {allowEdit: true, 
 	destinationType: destinationType.DATA_URL,

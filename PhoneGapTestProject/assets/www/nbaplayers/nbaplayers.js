@@ -61,7 +61,7 @@ function poblarBBDD(transaction) {
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Dwayne","Wade","1")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Chris","Bosh","1")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Ray","Allen","1")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Mike","Miller","1")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Shane","Battier","1")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Carmelo","Anthony","2")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Tyson","Chandler","2")');
@@ -78,15 +78,17 @@ function poblarBBDD(transaction) {
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Luol","Deng","4")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Carlos","Boozer","4")');
 	
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Paul","Pierce","5")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kevin","Garnett","5")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jeff","Green","5")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Gerald","Wallace","5")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Brandon","Bass","5")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Rajon","Rondo","5")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Deron","Williams","6")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Joe","Johnson","6")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Brook","Lopez","6")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Gerald","Wallace","6")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Paul","Pierce","6")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kevin","Garnett","6")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Andrei","Kirilenko","6")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Tim","Duncan","7")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Tony","Parker","7")');
@@ -102,41 +104,107 @@ function poblarBBDD(transaction) {
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Blake","Griffin","9")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Chris","Paul","9")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("DeAndre","Jordan","9")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jamal","Crawford","9")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kobe","Bryant","10")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Pau","Gasol","10")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Dwight","Howard","10")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Metta","World Peace","10")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Steve","Nash","10")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Ty","Lawson","11")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Andre","Iguodala","11")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Danilo","Gallinari","11")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kenneth","Faried","11")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kosta","Koufos","11")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Wilson","Chandler","11")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Mike","Conley","12")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Marc","Gasol","12")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Zach","Randolph","12")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Tyshaun","Prince","12")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Al","Horford","13")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Josh","Smith","13")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jeff","Teague","13")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Elton","Brand","13")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Paul","Millsap","13")');
 	
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Monta","Ellis","14")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Brandon","Jennings","14")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("O.J.","Mayo","14")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Ersan","Ilyasova","14")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Larry","Sanders","14")');
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Rudy","Gay","15")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Demarr","Derozan","15")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Andrea","Bargnani","15")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jonas","Valanciunas","15")');
 	
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jrue","Holiday","16")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Evan","Turner","16")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Thaddeus","Young","16")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Michael","Carter-Williams","16")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("John","Wall","17")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Bradley","Beal","17")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Nene","Hilario","17")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Josh","Smith","18")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Greg","Monroe","18")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Andre","Drummond","18")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Brandon","Jennings","18")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kyrie","Irving","19")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Dion","Waiters","19")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Tristan","Thompson","19")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Andrew","Bynum","19")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jameer","Nelson","20")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Glen","Davis","20")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Nikola","Vucevic","20")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Arron","Afflalo","20")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Al","Jefferson","21")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kemba","Walker","21")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Gerald","Henderson","21")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Stephen","Curry","22")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Andre","Iguodala","22")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Klay","Thompson","22")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Andre","Bogut","22")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("David","Lee","22")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Harrison","Barnes","22")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jeremy","Lin","23")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("James","Harden","23")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Chandler","Parsons","23")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Dwight","Howard","23")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Enes","Kanter","24")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Derrick","Favors","24")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Gordon","Hayward","24")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Trey","Burke","24")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jose","Calderon","25")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Monta","Ellis","25")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Dirk","Nowitzki","25")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Shawn","Marion","25")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Vince","Carter","25")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Damian","Lillard","26")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Nicolas","Batum","26")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("LaMarcus","Aldridge","26")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Ricky","Rubio","27")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kevin","Love","27")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Nikola","Pekovic","27")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Kevin","Martin","27")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("DeMarcus","Cousins","28")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Isaiah","Thomas","28")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Greivis","Vasquez","28")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Jrue","Holiday","29")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Eric","Gordon","29")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Anthony","Davis","29")');
+	
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Eric","Bledsoe","30")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Goran","Dragic","30")');
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Markieff","Morris","30")');
+	
 	
 	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("17","Washington Wizards","Este")');
 	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("18","Detroit Pistons","Este")');

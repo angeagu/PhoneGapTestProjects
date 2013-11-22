@@ -36,7 +36,7 @@ function poblarBBDD(transaction) {
 	
 	transaction.executeSql('CREATE TABLE IF NOT EXISTS FACTURAS (CONCEPTO TEXT, IMPORTE REAL, FECHA TEXT);');
 	
-	/*
+	
 	transaction.executeSql('INSERT INTO FACTURAS (CONCEPTO,IMPORTE,FECHA) VALUES ("Gas","123.45","27-7-2012")'); 
 	transaction.executeSql('INSERT INTO FACTURAS (CONCEPTO,IMPORTE,FECHA) VALUES ("Alquiler","98.87","27-5-2012")');
 	transaction.executeSql('INSERT INTO FACTURAS (CONCEPTO,IMPORTE,FECHA) VALUES ("IBI","123.45","27-6-2012")'); 
@@ -69,7 +69,7 @@ function poblarBBDD(transaction) {
 	transaction.executeSql('INSERT INTO FACTURAS (CONCEPTO,IMPORTE,FECHA) VALUES ("Iberdrola","98.87","27-5-2013")');
 	transaction.executeSql('INSERT INTO FACTURAS (CONCEPTO,IMPORTE,FECHA) VALUES ("Supermercado","123.45","27-6-2013")'); 
 	transaction.executeSql('INSERT INTO FACTURAS (CONCEPTO,IMPORTE,FECHA) VALUES ("Taller Coche","98.87","27-6-2013")');
-	*/
+	
 	
 	cargarFacturasMes(-1);
 	
@@ -287,12 +287,12 @@ function anterior() {
 	
 	if (pestanaActual == 'Mes') {
 		var mesAnterior = parseInt(mesActual) - 1;
-		alert ('Mes Anterior: ' + mesAnterior);
+		//alert ('Mes Anterior: ' + mesAnterior);
 		cargarFacturasMes(mesAnterior);
 	}	
 	if (pestanaActual == 'Ano') {
 		var anoAnterior = parseInt(anoActual) - 1;
-		alert (' Ano Anterior: ' + anoAnterior);
+		//alert (' Ano Anterior: ' + anoAnterior);
 		cargarFacturasAno(anoAnterior);
 	}
 }
@@ -301,12 +301,12 @@ function siguiente() {
 
 	if (pestanaActual == 'Mes') {
 		var mesSiguiente = parseInt(mesActual) + 1;
-		alert ('Mes Siguiente: ' + mesSiguiente);
+		//alert ('Mes Siguiente: ' + mesSiguiente);
 		cargarFacturasMes(mesSiguiente);
 	}	
 	if (pestanaActual == 'Ano') {
 		var anoSiguiente = parseInt(anoActual) + 1;
-		alert (' Ano Siguiente: ' + anoSiguiente);
+		//alert (' Ano Siguiente: ' + anoSiguiente);
 		cargarFacturasAno(anoSiguiente);
 	}
 }

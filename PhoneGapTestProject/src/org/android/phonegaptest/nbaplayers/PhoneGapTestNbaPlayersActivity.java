@@ -12,13 +12,13 @@ public class PhoneGapTestNbaPlayersActivity extends DroidGap {
     	try {
         	super.onCreate(savedInstanceState);
         	//setContentView(R.layout.main);
-        	Log.d("JQueryTestActivity", "Antes de direccionar a index.html");
+        	Log.d("PhoneGapTestNbaPlayersActivity", "Antes de direccionar a index.html");
         	super.loadUrl("file:///android_asset/www/nbaplayers/index.html");
-        	Log.d("JQueryTestActivity", "Después de direccionar a index.html");
+        	Log.d("PhoneGapTestNbaPlayersActivity", "Después de direccionar a index.html");
         }
         catch (Exception ex) {
-        	Log.d("JQueryTestActivity", ex.toString());
-        	Log.e("JQueryTestActivity", ex.toString());
+        	Log.d("PhoneGapTestNbaPlayersActivity", ex.toString());
+        	Log.e("PhoneGapTestNbaPlayersActivity", ex.toString());
         }
     }
 }

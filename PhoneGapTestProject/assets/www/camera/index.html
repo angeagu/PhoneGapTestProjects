@@ -5,25 +5,23 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	 
+	<link rel="stylesheet" href="jquery.mobile-1.3.0.css" />
 	<script type="text/javascript" charset="utf-8" src="../cordova-2.0.0.js"></script>
-	
-	<link rel="stylesheet" href="../jquery.mobile-1.1.1.min.css" />
 	<script type="text/javascript" charset="utf-8" src="../jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="../jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./jquery.mobile-1.3.0.js"></script>
 	<script type="text/javascript" charset="utf-8" src="./PhoneGapTestCamera.js"></script>
-
-	<script type="text/javascript" charset="utf-8">
-		
-	</script>
 
 </head> 
 
 <body>
  
-<div id="divCamara">
+<div data-role="page" id="divCamara" data-theme="b">
+	<div data-role="header" data-theme="b">
+		<h2 data-theme="b">Camara App</h2>
+	</div>
 	<br>
 	<div style="margin:20px">
-		<img style="width:100px;height:100px;" id="imagen" src="" />
+		<img style="width:150px;height:150px;" id="imagen" src="" />
 	</div>
 	<br>
 	<div data-role="rangeslider">
