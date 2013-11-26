@@ -203,24 +203,7 @@ function poblarBBDD(transaction) {
 	
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Eric","Bledsoe","30")');
 	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Goran","Dragic","30")');
-	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Markieff","Morris","30")');
-	
-	
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("17","Washington Wizards","Este")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("18","Detroit Pistons","Este")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("19","Cleveland Cavaliers","Este")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("20","Orlando Magic","Este")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("21","Charlotte Bobcats","Este")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("22","Golden State Warriors","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("23","Houston Rockets","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("24","Utah Jazz","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("25","Dallas Mavericks","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("26","Portland Trail Blazers","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("27","Minnesota Timberwolves","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("28","Sacramento Kings","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("29","New Orleans Hornets","Oeste")');
-	transaction.executeSql('INSERT INTO TEAMS (ID_EQUIPO,NOMBRE,CONFERENCIA) VALUES ("30","Phoenix Suns","Oeste")');
-			
+	transaction.executeSql('INSERT INTO PLAYERS (NOMBRE,APELLIDO,ID_EQUIPO) VALUES ("Markieff","Morris","30")');		
 	
 }
 
